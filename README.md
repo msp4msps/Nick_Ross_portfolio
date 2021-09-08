@@ -16,4 +16,4 @@ Color overlay here with deep links to my blog, youtube channel, and github repos
 <H2>Responsive Design</H2>
 
 All componets are responsive to different media sizes/
-<img src="Assets/portpic3" alt="Current website img" style="max-width:100%;">
+<img src="Assets/portpic3.png" alt="Current website img" style="max-width:100%;">
