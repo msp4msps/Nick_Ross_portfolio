@@ -105,7 +105,7 @@ nav ul li :hover {
   margin: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   z-index: 1;
   padding-bottom: 20px;
   /* position: relative; */
@@ -137,7 +137,9 @@ main {
 }
 
 .column h3,
-.modal-header {
+.modal-header,
+#about,
+#contact {
   color: #fff;
   font-size: 36px;
   font-weight: 700;
@@ -146,7 +148,7 @@ main {
   text-shadow: 0 2px 4px rgb(71 97 206 / 36%);
   position: relative;
   top: 4px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 
 .column p {
@@ -192,4 +194,37 @@ main {
   left: 260px;
   top: -20px;
   z-index: 0;
+}
+
+.contact-column {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 1;
+  padding-bottom: 20px;
+  align-items: center;
+}
+
+.contact-column li a {
+  color: white;
+}
+
+.list {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(1.5px);
+  -webkit-backdrop-filter: blur(1.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  align-items: center;
+  z-index: 1;
+  padding: 10px;
+}
+
+.list li {
+  align-items: center;
+}
+
+.list li i {
+  margin-right: 10px;
 }
