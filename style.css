@@ -228,3 +228,38 @@ main {
 .list li i {
   margin-right: 10px;
 }
+
+.modal-descrip {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 1150px) {
+  .jobtitle {
+    visibility: hidden;
+  }
+  .social {
+    visibility: hidden;
+  }
+  .bubble2 {
+    position: absolute;
+    height: 203px;
+    width: 204px;
+    left: 260px;
+    z-index: -1;
+  }
+  .row {
+    height: 120px;
+  }
+}
+@media (max-width: 600px) {
+  .contact-column {
+    display: flex;
+    flex-direction: column;
+  }
+  .list {
+    margin: 10px;
+  }
+}

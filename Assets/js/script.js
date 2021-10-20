@@ -2,9 +2,9 @@ var youtube = document.getElementById("youtube");
 var blog = document.getElementById("blog");
 var frog = document.getElementById("frog");
 var weather = document.getElementById("weather");
-var password = document.getElementById("Password");
+var password = document.getElementById("password");
 var syncro = document.getElementById("Syncro");
-var intune = document.getElementById("Intune");
+var intune = document.getElementById("intune");
 var auth = document.getElementById("auth");
 var exchange = document.getElementById("exchange");
 var youtubeModal = document.getElementById("youtube-modal");
@@ -13,7 +13,7 @@ var frogModal = document.getElementById("frog-modal");
 var weatherModal = document.getElementById("weather-modal");
 var passwordModal = document.getElementById("password-modal");
 var syncroModal = document.getElementById("Syncro-modal");
-var intuneModal = document.getElementById("Intune-modal");
+var intuneModal = document.getElementById("intune-modal");
 var authModal = document.getElementById("auth-modal");
 var exchangeModal = document.getElementById("exchange-modal");
 var closeModal = document.querySelector(".work");
@@ -35,14 +35,14 @@ weather.addEventListener("click", function () {
   getModal(weatherModal);
 });
 password.addEventListener("click", function () {
-  getModal([passwordModal]);
+  getModal(passwordModal);
 });
 syncro.addEventListener("click", function () {
   getModal(syncroModal);
 });
-// intune.addEventListener("click", function () {
-//   getModal(intuneModal);
-// });
+intune.addEventListener("click", function () {
+  getModal(intuneModal);
+});
 auth.addEventListener("click", function () {
   getModal(authModal);
 });
