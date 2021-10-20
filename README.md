@@ -1,7 +1,8 @@
 #Nick Ross Porfolio
 
 The following project was conducted to create a landing page for a personal portfolio. The page includes deep links to exmaples of my work and is completely responsive. The entire page was made with HTML, CSS, and Java Script
-<img src="Assets/screeenshot3.png" alt="Current website img" style="max-width:100%;">
+
+<img src="Assets/screenshot3.png" alt="Current website img" style="max-width:100%;">
 
 <H2>Author</H2>
 Nick Ross
