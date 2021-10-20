@@ -5,33 +5,376 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nick Ross Portfolio</title>
     <link rel="stylesheet" href="./assets/css/reset.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="//use.fontawesome.com/releases/v5.0.7/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Black Han Sans"
+    />
+    <link rel="stylesheet" href="Assets/css/style.css" />
   </head>
 
   <body>
     <!--Header and Nav-->
     <header>
-      <div id="title">
-        <h1>Nick Ross</h1>
-        <h3>
-          Internal Operations Director | Microsoft 365 Expert Administator
-        </h3>
+      <div class="row">
+        <div class="large-1">
+          <img src="Assets/profile.jfif" alt="picture of me" />
+          <h1>Nick Ross</h1>
+          <br />
+        </div>
+        <div>
+          <h3 class="jobtitle">
+            <span class="colorchange">Internal Operations Director</span> |
+            Microsoft 365 Expert Administator
+          </h3>
+        </div>
+        <div class="large-2">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#Work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
       </div>
+
       <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#work">Work</a></li>
-          <li><a href="#contact">Contact</a></li>
+        <ul class="social">
+          <li>
+            <a class="navbar-item" href="https://github.com/msp4msps"
+              ><i class="fab fa-github fa-2x"></i
+            ></a>
+          </li>
+          <li>
+            <a class="navbar-item" href="https://twitter.com/tminus365"
+              ><i class="fab fa-twitter fa-2x"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              class="navbar-item"
+              href="https://www.linkedin.com/in/nick-ross-77781a82/"
+              ><i class="fab fa-linkedin-in fa-2x"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              class="navbar-item"
+              href="https://www.youtube.com/channel/UCePaXDDk5kl3g7FcJ5gH5AQ/"
+              ><i class="fab fa-youtube fa-2x"></i
+            ></a>
+          </li>
+          <li>
+            <a class="navbar-item" href="https://tminus365.com/"
+              ><i class="fab fa-wordpress-simple fa-2x"></i
+            ></a>
+          </li>
         </ul>
       </nav>
     </header>
-    <!--Cover IMG-->
-    <div id="backimg">
-      <p>My Portfolio</p>
-    </div>
     <main>
       <!--about me-->
-      <section class="about">
+      <section class="work container">
+        <h1 id="work">My Work</h1>
+        <div class="columns">
+          <!-- Column -->
+          <div class="column" id="youtube">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAilBMVEX/////AAD/WVn/sbH/nJz/8fH/Kir/4uL/3t7/zs7/xsb/YGD/7e3/GBj/9fX/y8v/trb/19f/PT3/oaH/jIz/goL/fX3/c3P/bm7/paX/NDT/Dg7/SEj/+vr/wcH/vLz/VFT/IiL/aGj/k5P/UFD/LS3/X1//iYn/gID/Ojr/srL/nZ3/RUX/d3eHgOMVAAAEkklEQVR4nO2d22KiQAyGWdQFBRE84QnBc9ut7/96i9tuz4ZBAiPh/+560Zn8LTCTZCYxDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzSPyOq5l2UHQ7XYHg9469lut+ai9241Pk+k5nG23W8c5mmaSJKZ5dJz051l4nk5O492uPZq3Wn687g0G6W8HgW1ZbseLdKqJPNcKuuu4Nd9NQmf/PFwcNpv+8hcfy/5mc1gMn/dOONnNW/G6G1iuF5Ws2nPtgZ9qmiVDXjnKoofJLNXrD2zX4xbXsf3TcVG9qmssF8eTb3eY1LlxOLwfbR9ZDs+xW1Re1Nv2dQsh6W97hV7OONGtQIEkvllfJ9RtvCLhjW9k76DbcmUOvVsE+rrNzsU8v8C2bptz0pYuMPd/saXb3hvw8wgMdFt7E4G6QG+l29ibWKnvVk+6bb2Rk+xn9IKtqPBBt6E386Am0LpPT0KFpaWksH5L4Ttq6349P6QvrJQeUt1WFkLlMX3SbWQhWgoKJ7qNLITK13Sv28hCrLJjGu59x2Wy6GeHpga6bSxItrf/R7eJBcleEesSfbpGmCUwqvN6f2Gf9anxfus2sSC/s5zEGm+7X8jcfHd1W1iYbobCWLeBhcmK8Y90G1iYUYbCqW4DCzPNUHjUbWBhjhkKh7oNLMwwQ2Hdl8N0QaQFdlg9Cy1ra59OJvKGMEx/wTqeGvSSzxsMNo1oV727SacveqxzmZen4sw6pAK0h8ibVTP/jTmo2F2hg1G80WDzddSnSk8E0D7wmHWu/wqNzrjCz+qYVMi7aTPfB7ZnrCNT0Ns2XjvMj0P3nlnHvs6MVOiwzmV+HnxezYbJIRXynvL6otBwK0kuJ6RC3g/7V4XpjoL3IfkRMv8UPbLO9V2hYaxL38g9UtG2iHf6nxQa3mjDOsk3FpRC5ljijwrT17HcQAIZT+xsWOe6ojB9HctMcG0o94k58XRVoWGU6FeR6SeXd3NFKDS80vyqJaWQOYdPKUwnKysJRLnAlSosza+6I4WpP1rGRo5SaPNOla3QcEvwq6jTbcxn9hQUpn/VLe+kdKCGOfOkpJDfr6KyT7yBKFWFRjTfcE5LhaKYc2uqCtPXkfOcEpVf06Yw/QSYbNNSCplvkeRRmP55ubJC1KF95ksI+RSmfhXPRo4KmM5ZZngjp0KuADl1t0S3wtQChg3APSss/38o/z2U/y2Vvx7K39PI35fK9y3k+4fyfXz5cRrE2nJyh/FS+TFv+XkL+bkn+flD+Tlg+Xl8+WcxGnCeRv6ZKPnn2uSfTZR/vlT+GWH557zln9WXf99C/p0Z+fee5N9da8D9Q/l3SOXfA5Z/l1v+fXz5NRXk18WQX9tEfn0a+TWGGlAnSn6tL/n12uTX3GtA3UT5tS/l1y+VX4O2AXWEa7z5VqwFLb+eN/fptgpR7h0gvq5+A3oj1LR3QI7+Fg3oUVLHRTF3t6C6SczdK6gB/Z4a0LOrAX3XDPm984wG9D+8ILyH5Suy+5C+IbqX7GfE9gOmVYvq6QwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQBd/AeVenzu8wDl+AAAAAElFTkSuQmCC"
+              alt="Placeholder image"
+            />
+            <h3>YouTube Channel</h3>
+            <p>Microsoft Educational Content</p>
+          </div>
+          <!-- Add Modal -->
+          <div class="modal" id="youtube-modal">
+            <div class="modal-background"></div>
+            <div class="modal-content">
+              <h2 class="modal-header">Youtube Channel</h2>
+              <img src="/Assets/Youtubepic1.png" alt="" />
+              <p class="modal-description">
+                T-Minus 365 was created to deliver targeted content towards MSPs
+                around Microsoft. I am building guides and curriculum that will
+                get you acclimated to the newest technologies of Microsoft. This
+                channel is target to both the business and technical audience as
+                I also show how to pitch these services to your customers.
+              </p>
+              <div class="modal-descrip">
+                <p>
+                  <i class="fab fa-youtube fa-2x"></i
+                  ><a
+                    class="modal-description"
+                    href="https://www.youtube.com/channel/UCePaXDDk5kl3g7FcJ5gH5AQ"
+                    >Check out on YouTube</a
+                  >
+                </p>
+              </div>
+            </div>
+            <button class="modal-close is-large" aria-label="close"></button>
+          </div>
+          <!-- Column -->
+          <div class="column" id="blog">
+            <img
+              src="data:image/png;base64,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"
+              alt="Placeholder image"
+            />
+            <h3>Blog</h3>
+            <p>Microsft Educational Content</p>
+          </div>
+
+          <!-- Add Modal -->
+          <div class="modal" id="blog-modal">
+            <div class="modal-background"></div>
+            <div class="modal-content">
+              <h2 class="modal-header">Tminus365 Blog</h2>
+              <img src="Assets/TMINUSLogo.png" alt="" />
+              <p class="modal-description">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Doloremque nesciunt mollitia autem, eligendi blanditiis libero
+                accusamus error harum aliquid delectus obcaecati. Dolore, vero
+                repudiandae? Quidem laborum deleniti repudiandae veniam
+                consectetur quod unde, nam nulla fugit eius veritatis ut?
+                Doloribus eos repellendus velit. Illum nulla, ullam cum culpa
+                repellat fugit exercitationem.
+              </p>
+              div.
+              <p>
+                <i class="fab fa-wordpress fa-2x"></i
+                ><a class="modal-description" href="https://tminus365.com/"
+                  >View Blog</a
+                >
+              </p>
+            </div>
+            <button class="modal-close is-large" aria-label="close"></button>
+          </div>
+          <!-- column -->
+          <div class="column" id="frog">
+            <img src="Assets/frog.png" alt="Placeholder image" />
+            <h3>Eat the Frog</h3>
+            <p>Task Manager</p>
+          </div>
+        </div>
+        <!-- Add Modal -->
+        <div class="modal" id="frog-modal">
+          <div class="modal-background"></div>
+          <div class="modal-content">
+            <h2 class="modal-header">Eat the Frog</h2>
+            <img src="Assets/eat_the_frog.png" alt="" />
+            <p class="modal-description">
+              The purpose of this application is to serve as a task manager with
+              a built in incentive system for the user to help them stay more
+              accountable and stay more productive. The concent of "Eat the
+              Frog" comes from a Mark Twain quote where he says, “If it's your
+              job to eat a frog, it's best to do it first thing in the morning.
+              And if it's your job to eat two frogs, it's best to eat the
+              biggest one first.”
+            </p>
+            <p>
+              <i class="fab fa-github fa-2x"></i
+              ><a
+                class="modal-description"
+                href="https://github.com/msp4msps/eat_the_frog"
+                >Check out on GitHub</a
+              >
+            </p>
+          </div>
+          <button class="modal-close is-large" aria-label="close"></button>
+        </div>
+        <!-- Column -->
+        <div class="columns">
+          <div class="column" id="weather">
+            <img src="Assets/weather.png" alt="Placeholder image" />
+            <h3>Weather API</h3>
+            <p>Weather Fetcher</p>
+          </div>
+          <img
+            class="bubble2"
+            src="https://hype4.academy/_next/static/images/ovalShadow-7e49db2e37a9f21e4c37d482a6a5ac7c.svg"
+            alt=""
+          />
+          <!-- Add Modal -->
+          <div class="modal" id="weather-modal">
+            <div class="modal-background"></div>
+            <div class="modal-content">
+              <h2 class="modal-header">Weather API</h2>
+              <img src="Assets/weather2.png" alt="" />
+              <p class="modal-description">
+                The following project was conducted to leverage the open weather
+                API to allow a user to search for cities and discover current
+                weather information as well as a five day forcast.
+              </p>
+              <p>
+                <i class="fab fa-github fa-2x"></i
+                ><a
+                  class="modal-description"
+                  href="https://github.com/msp4msps/weather_api"
+                  >Check out on GitHub</a
+                >
+              </p>
+            </div>
+            <button class="modal-close is-large" aria-label="close"></button>
+          </div>
+          <!-- Column -->
+          <div class="column" id="password">
+            <img src="Assets/passgen.png" alt="Placeholder image" />
+            <h3>Password Generator</h3>
+            <p>App to generate random, strong passwords</p>
+          </div>
+          <!-- Add Modal -->
+          <div class="modal" id="password-modal">
+            <div class="modal-background"></div>
+            <div class="modal-content">
+              <h2 class="modal-header">Password Generator</h2>
+              <img src="Assets/passgen.png" alt="" />
+              <p class="modal-description">
+                The following project was conducted to create an application
+                that enables employees to generate random passwords based on
+                criteria that they’ve selected. The Password Generator allows
+                the user to select the password lengnth as well as defining if
+                numbers, symbols, uppercase letters, or lowercase letters, will
+                be included.
+              </p>
+              <p>
+                <i class="fab fa-github fa-2x"></i
+                ><a
+                  class="modal-description"
+                  href="https://github.com/msp4msps/passwordgenerator"
+                  >Check out on GitHub</a
+                >
+              </p>
+            </div>
+            <button class="modal-close is-large" aria-label="close"></button>
+          </div>
+          <!-- Column -->
+          <div class="column" id="Syncro">
+            <img src="Assets/Syncro Logo1.png" alt="Placeholder image" />
+            <h3>Syncro Documentation</h3>
+            <p>PowerShell Automation into PSA Tool</p>
+          </div>
+        </div>
+
+        <!-- Add Modal -->
+        <div class="modal" id="Syncro-modal">
+          <div class="modal-background"></div>
+          <div class="modal-content">
+            <h2 class="modal-header">Syncro Documentation</h2>
+            <img src="Assets/syncro2.png" alt="" />
+            <p class="modal-description">
+              Documenting customer Microsoft 365 environments can be extremely
+              tedious and time consuming. Keeping that information up to date is
+              also a heavy task to manage. I wanted to create some scripts that
+              would automate and update documents in Syncro that are tied to
+              customer environments.
+            </p>
+            <p>
+              <i class="fab fa-github fa-2x"></i
+              ><a
+                class="modal-description"
+                href="https://github.com/msp4msps/Syncro-Documentation"
+                >Check out on GitHub</a
+              >
+            </p>
+          </div>
+          <button class="modal-close is-large" aria-label="close"></button>
+        </div>
+        <div class="columns">
+          <!-- Column -->
+          <div class="column" id="intune">
+            <img src="Assets/Intune.png" alt="Placeholder image" />
+            <h3>Intune Runbook</h3>
+            <p>Powershell Automation with MDM</p>
+          </div>
+          <img
+            class="bubble"
+            src="https://hype4.academy/_next/static/images/ovalShadow-7e49db2e37a9f21e4c37d482a6a5ac7c.svg"
+            alt=""
+          />
+          <!-- Add Modal -->
+          <div class="modal" id="intune-modal">
+            <div class="modal-background"></div>
+            <div class="modal-content">
+              <h2 class="modal-header">Intune Runbook</h2>
+              <img src="/Assets/Youtubepic1.png" alt="" />
+              <p class="modal-description">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Doloremque nesciunt mollitia autem, eligendi blanditiis libero
+                accusamus error harum aliquid delectus obcaecati. Dolore, vero
+                repudiandae? Quidem laborum deleniti repudiandae veniam
+                consectetur quod unde, nam nulla fugit eius veritatis ut?
+                Doloribus eos repellendus velit. Illum nulla, ullam cum culpa
+                repellat fugit exercitationem.
+              </p>
+              <p>
+                <i class="fab fa-github fa-2x"></i
+                ><a class="modal-description" href="#contact"
+                  >Checkout on YouTube</a
+                >
+              </p>
+            </div>
+            <button class="modal-close is-large" aria-label="close"></button>
+          </div>
+          <!-- Column -->
+          <div class="column" id="auth">
+            <img src="Assets/Admin logo 2.png" alt="Placeholder image" />
+            <h3>Basic Auth Reporting</h3>
+            <p>Microsoft Graph API</p>
+          </div>
+          <!-- Add Modal -->
+          <div class="modal" id="auth-modal">
+            <div class="modal-background"></div>
+            <div class="modal-content">
+              <h2 class="modal-header">Basic Auth Reporting</h2>
+              <img src="Assets/basicAuth.png" alt="" />
+              <p class="modal-description">
+                he following project was created to help support MSPs in
+                reporting basic authentication across customers under
+                management.
+              </p>
+              <p>
+                <i class="fab fa-github fa-2x"></i
+                ><a
+                  class="modal-description"
+                  href="https://github.com/msp4msps/Basic-Authentication-Reporting"
+                  >Checkout on GitHub</a
+                >
+              </p>
+            </div>
+            <button class="modal-close is-large" aria-label="close"></button>
+          </div>
+          <!-- Column -->
+          <div class="column" id="exchange">
+            <img src="Assets/Exchange.png" alt="Placeholder image" />
+            <h3>Exchange Policy Report</h3>
+            <p>Powershell Automation with Email</p>
+          </div>
+        </div>
+        <!-- Add Modal -->
+        <div class="modal" id="exchange-modal">
+          <div class="modal-background"></div>
+          <div class="modal-content">
+            <h2 class="modal-header">Excahnge Policy Report</h2>
+            <img src="Assets/Exchange.png" alt="" />
+            <p class="modal-description">
+              Reporting on all exchange policies in Microsoft across customers
+              for an MSP.
+            </p>
+            <p>
+              <i class="fab fa-github fa-2x"></i
+              ><a
+                class="modal-description"
+                href="https://github.com/msp4msps/Exchange_Policy_Reporting"
+                >Checkout on GitHub</a
+              >
+            </p>
+          </div>
+          <button class="modal-close is-large" aria-label="close"></button>
+        </div>
         <div>
           <h2 id="about">About Me</h2>
         </div>
@@ -49,99 +392,49 @@
             across vendors leveraging baseline skills in coding with HTML, CSS,
             and PowerShell.
           </p>
+          <p><a href="/Nick Ross-Resume.pdf">Resume</a></p>
         </div>
-      </section>
-      <!--My Work-->
-      <section class="myWork">
-        <div>
-          <h2 id="work">My Work</h2>
-        </div>
-        <div class="references">
-          <div id="maincard">
-            <div class="card">
-              <div class="card-img">
-                <img src="Assets/TMINUSLogo.png" alt="company logo" />
-              </div>
-              <div class="text1">
-                <h3><a href="https://tminus365.com/">Microsoft Blog</a></h3>
-                <p>HTML/CSS</p>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="card">
-              <div class="card-img">
-                <img src="Assets/Youtubepic1.png" alt="Youtube profile page" />
-              </div>
-              <div class="text1">
-                <h3>
-                  <a
-                    href="https://www.youtube.com/channel/UCePaXDDk5kl3g7FcJ5gH5AQ"
-                    >Youtube Channel</a
-                  >
-                </h3>
-                <p>Camtasia</p>
-              </div>
-            </div>
-            <div class="card">
-              <img src="Assets/Syncro Logo1.png" />
-              <div class="text1">
-                <h3>
-                  <a href="https://github.com/msp4msps/Syncro-Documentation"
-                    >3rd Party Automation</a
-                  >
-                </h3>
-                <p>Powershell/CSS</p>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="card">
-              <img src="Assets/powershelllogo.png" alt="Powershell logo" />
-              <div class="text1">
-                <h3>
-                  <a
-                    href="https://github.com/msp4msps/Security/blob/master/MFA%20Status_Custom%20Control_All%20Customers.ps1"
-                    >Microsoft CSP Automation</a
-                  >
-                </h3>
-                <p>HTML/Powershell</p>
-              </div>
-            </div>
-            <div class="card">
-              <img src="Assets/Intune.png" alt="Microsoft Intune Logo" />
-              <div class="text1">
-                <h3>
-                  <a href="https://github.com/msp4msps/M365-Intune"
-                    >Intune Runbooks</a
-                  >
-                </h3>
-                <p>Powershell</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--Contact Me-->
-      <section class="contact">
-        <div class="row1">
+        <div class="">
           <div>
             <h2 id="contact">Contact Me</h2>
           </div>
-          <div class="column2">
-            <ul>
-              <li><a href="#">msp4msps@tminus365.com</a></li>
-              <li>
-                <a href="https://www.linkedin.com/in/nick-ross-77781a82/"
-                  >LinkedIn</a
-                >
-              </li>
-              <li><a href="https://github.com/msp4msps">GitHub</a></li>
-              <li><a href="https://twitter.com/tminus365">Twitter</a></li>
+          <div class="contact-list">
+            <ul class="contact-column">
+              <div class="list">
+                <li>
+                  <i class="fas fa-envelope-square fa-2x"></i
+                  ><a href="#">msp4msps@tminus365.com</a>
+                </li>
+              </div>
+              <div class="list">
+                <li>
+                  <a href="https://www.linkedin.com/in/nick-ross-77781a82/"
+                    ><i class="fab fa-linkedin-in fa-2x"></i>LinkedIn</a
+                  >
+                </li>
+              </div>
+              <div class="list">
+                <li>
+                  <i class="fab fa-github fa-2x"></i
+                  ><a href="https://github.com/msp4msps">GitHub</a>
+                </li>
+              </div>
+              <div class="list">
+                <li>
+                  <i class="fab fa-twitter fa-2x"></i
+                  ><a href="https://twitter.com/tminus365">Twitter</a>
+                </li>
+              </div>
             </ul>
           </div>
         </div>
       </section>
+
+      <!--My Work-->
+      <section class="myWork"></section>
+      <!--Contact Me-->
+      <section class="contact"></section>
     </main>
   </body>
+  <script src="/Assets/js/script.js"></script>
 </html>
