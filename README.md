@@ -1,6 +1,6 @@
 #Nick Ross Porfolio
 
-The following project was conducted to create a landing page for a personal portfolio. The page includes deep links to exmaples of my work and is completely responsive. The entire page was made with HTML, CSS, and Java Script
+The following project was conducted to create a landing page for a personal portfolio. The page includes deep links to exmaples of my work and is completely responsive. The entire page was made with HTML, CSS, Bulma, Java Script
 
 <img src="Assets/screenshot3.png" alt="Current website img" style="max-width:100%;">
 
