@@ -1,22 +1,46 @@
-#Nick Ross Porfolio
+# NICK ROSS PORTFOLIO
 
-The following project was conducted to create a landing page for a personal portfolio. The page includes deep links to exmaples of my work and is completely responsive. The entire page was made with HTML, CSS, Bulma, Java Script
+[![github-follow](https://img.shields.io/github/followers/msp4msps?label=Follow&logoColor=purple&style=social)](https://github.com/msp4msps)
+[![project-languages-used](https://img.shields.io/github/languages/count/msp4msps/Nick_Ross_portfolio?color=important)](https://github.com/msp4msps/Nick_Ross_portfolio)
+[![project-top-language](https://img.shields.io/github/languages/top/msp4msps/Nick_Ross_portfolio?color=blueviolet)](https://github.com/msp4msps/Nick_Ross_portfolio)
+[![license](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://choosealicense.com/licenses/mit/)
 
-<img src="Assets/screenshot3.png" alt="Current website img" style="max-width:100%;">
+## Table of Content
 
-<H2>Author</H2>
-Nick Ross
+- [ Project Links ](#Project-Links)
+- [ Screenshots](#Screenshots)
+- [ Project Description ](#Project-Description)
+- [ Questions ](#Questions)
+- [ License ](#License)
 
-<H2>My Work</H2>
+#
 
-Leveraging a bulma mostly for CSS components here and added a glassmorphism style for card information. Clicking into the cards brings up a modal with the screenshot of the work and a link to further content such as my blog or the github page where the project currently lives.
+## Project Links
 
-<img src="Assets/screenshot1.png" alt="Current website img" style="max-width:100%;">
+https://github.com/msp4msps/Nick_Ross_portfolio<br>
+https://github.com/msp4msps/Nick_Ross_portfolio
 
-<H2>Responsive Design</H2>
+## Screenshots-Demo
 
-All componets are responsive to different media sizes/
-<img src="Assets/screenshot2.png" alt="Current website img" style="max-width:100%;">
+<kbd>![screenshot1](Assets/screenshot3.png)</kbd><kbd>![screenshot2](Assets/screenshot1.png)</kbd><kbd>![screenshot3](Assets/screenshot2.png)</kbd>
 
-<H2>License<H2>
-This project is under the MIT license.
+## Project Description
+
+The following project was conducted to create a landing page for a personal portfolio. The page includes deep links to exmaples of my work and is completely responsive. The entire page was made with HTML, CSS, Bulma, Java Script, NodeJS, MySQL
+
+## Technologies
+
+```
+Javascript, Html, CSS
+```
+
+## Questions
+
+Contact the author with any questions!<br>
+Github link: [msp4msps](https://github.com/msp4msps)<br>
+Email: msp4msps@tminus365.com
+
+## License
+
+This project is [MIT](https://choosealicense.com/licenses/mit/) licensed.<br />
+Copyright © 2022 [NICK ROSS](https://github.com/msp4msps)

@@ -236,6 +236,10 @@ main {
   justify-content: center;
 }
 
+.column:hover {
+  cursor: pointer;
+}
+
 @media (max-width: 1150px) {
   .jobtitle {
     visibility: hidden;
