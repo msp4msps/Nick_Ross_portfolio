@@ -18,7 +18,7 @@
 ## Project Links
 
 https://github.com/msp4msps/Nick_Ross_portfolio<br>
-https://github.com/msp4msps/Nick_Ross_portfolio
+https://msp4msps.github.io/Nick_Ross_portfolio/
 
 ## Screenshots-Demo
 
